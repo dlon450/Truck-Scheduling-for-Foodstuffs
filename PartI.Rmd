@@ -1,0 +1,79 @@
+---
+title: "Part I - Data Visualisation"
+output: html_document
+---
+
+# Import tidyverse, demandData.csv and convert to tibble structure
+```{r}
+library(tidyverse)
+demand = read.csv("demandData.csv")
+demand = as_tibble(demand)
+```
+
+# Gather dates and pallets into two columns
+```{r}
+demand_gather = gather(demand,key="Dates",value="Pallet",starts_with("X"))
+demand_gather$Dates = substr(demand_gather$Dates,2,11)
+demand_gather
+```
+
+# Parse date time
+```{r}
+library(lubridate)
+demand_gather$Dates=parse_date_time(demand_gather$Dates,"d.m.Y")
+demand_gather
+```
+
+# Overall Pallet distribution across 4 weeks
+```{r}
+demand_gather$Day=as.factor(day(demand_gather$Dates))
+demand_group = group_by(demand_gather,Day)
+demand_summarise = summarise(demand_group,Pallet=sum(Pallet,na.rm=TRUE))
+g = ggplot(demand_summarise)+geom_bar(aes(x=Day,y=Pallet),stat="identity",fill="orange")
+g = g + labs(title = "Total pallets across all stores in 4 weeks", subtitle = "Day 1 = Monday", y="Number of pallets per day")
+plot(g)
+```
+- Weekdays are fairly evenly distributed
+- No delivery of pallets on Sunday
+- Much less pallets delivered on Saturday (half of a weekday)
+
+# Distribution across 4 weeks for Pak 'n Save Botany
+```{r}
+demand_grouped = group_by(demand_gather,ï..Supermarket,Dates)
+demand_summarised = summarise(demand_grouped,Pallet=ceiling(median(Pallet,na.rm=TRUE)))
+one_shop = filter(demand_summarised,ï..Supermarket=="Pak 'n Save Botany")
+g1 =ggplot(one_shop)+geom_bar(aes(x=Dates,y=Pallet),stat="identity")
+```
+- Saturday much less, Sunday no pallets
+
+```{r}
+supermarket_groups = group_by(demand_gather,Type.of.Supermarket)
+supermarket_summarise = summarise(supermarket_groups,Pallet=ceiling(median(Pallet,na.rm=TRUE)))
+g2 = ggplot(supermarket_summarise)+geom_bar(aes(x=Type.of.Supermarket,y=Pallet),stat="identity")
+g2 = g2 + labs(title = "Median number of pallets per day for each type of supermarket", x = 'Type of supermarket', y= 'Median number of pallets per day')
+plot(g2)
+```
+
+
+# Import leaflet, FoodstuffLocations.csv as tibble
+```{r}
+library(leaflet)
+locations = read.csv("FoodstuffLocations.csv")
+locations = as_tibble(locations)
+```
+
+# Make map of locations
+```{r}
+map = leaflet(locations)
+shop = makeIcon("location.png","location.png", 30, 30)
+map %>% addTiles() %>% addMarkers(~Long, ~Lat, icon = shop)
+```
+
+```{r}
+library(s20x)
+boxplot(Pallet ~ Type.of.Supermarket, data = demand_gather, main ="number of Pallets delivered to each type of supermarket per day")
+summaryStats(Pallet ~ Type.of.Supermarket, data = demand_gather)
+
+onewayPlot(Pallet ~ Type.of.Supermarket, data = demand_gather)
+```
+

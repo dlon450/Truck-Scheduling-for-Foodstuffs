@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_baa674b1c1db43aa827e5a9ca2cfe4b5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_baa674b1c1db43aa827e5a9ca2cfe4b5" ></div>
+        
+</body>
+<script>    
+    
+            var map_baa674b1c1db43aa827e5a9ca2cfe4b5 = L.map(
+                "map_baa674b1c1db43aa827e5a9ca2cfe4b5",
+                {
+                    center: [-36.9079041, 174.7281051],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_13bd86e0ff8342be80b937cff4c82793 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var marker_e00d6d3742734b0eacdbcb9b7b6d3020 = L.marker(
+                [-36.9079041, 174.7281051],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_95866a6cf103454693691a93fde5dc38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_e00d6d3742734b0eacdbcb9b7b6d3020.setIcon(icon_95866a6cf103454693691a93fde5dc38);
+        
+    
+        var popup_175a4c1c0a604611a81b9ff6197d527e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57aa74610a844dcf86840116532f6be7 = $(`<div id="html_57aa74610a844dcf86840116532f6be7" style="width: 100.0%; height: 100.0%;">Warehouse</div>`)[0];
+            popup_175a4c1c0a604611a81b9ff6197d527e.setContent(html_57aa74610a844dcf86840116532f6be7);
+        
+
+        marker_e00d6d3742734b0eacdbcb9b7b6d3020.bindPopup(popup_175a4c1c0a604611a81b9ff6197d527e)
+        ;
+
+        
+    
+    
+            var marker_d9726a13242d4635b82cbce69d8f4e67 = L.marker(
+                [-36.728143599999996, 174.710513],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_925922a6edba4eb686cf9da60d57ac34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d9726a13242d4635b82cbce69d8f4e67.setIcon(icon_925922a6edba4eb686cf9da60d57ac34);
+        
+    
+        var popup_2c3f6db8ed1f430fae8f9fa5e23d115c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_632d8e60a04a43988e9615a2b6c7f348 = $(`<div id="html_632d8e60a04a43988e9615a2b6c7f348" style="width: 100.0%; height: 100.0%;">New World Albany</div>`)[0];
+            popup_2c3f6db8ed1f430fae8f9fa5e23d115c.setContent(html_632d8e60a04a43988e9615a2b6c7f348);
+        
+
+        marker_d9726a13242d4635b82cbce69d8f4e67.bindPopup(popup_2c3f6db8ed1f430fae8f9fa5e23d115c)
+        ;
+
+        
+    
+    
+            var marker_2db63151fa0245078b7560d79b403790 = L.marker(
+                [-36.8114278, 174.7114858],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_7a91a4399f044a57a2c04e598d841d35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2db63151fa0245078b7560d79b403790.setIcon(icon_7a91a4399f044a57a2c04e598d841d35);
+        
+    
+        var popup_5b9b94268c4d4e5abc41d4c3c8e284a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fa717b0edf3423a86fd1b796cfa43e5 = $(`<div id="html_8fa717b0edf3423a86fd1b796cfa43e5" style="width: 100.0%; height: 100.0%;">New World Birkenhead</div>`)[0];
+            popup_5b9b94268c4d4e5abc41d4c3c8e284a0.setContent(html_8fa717b0edf3423a86fd1b796cfa43e5);
+        
+
+        marker_2db63151fa0245078b7560d79b403790.bindPopup(popup_5b9b94268c4d4e5abc41d4c3c8e284a0)
+        ;
+
+        
+    
+    
+            var marker_7da3766c7440410d91e004aa700b26a5 = L.marker(
+                [-36.9338828, 174.91149140000002],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_bde57d13b00f40c78d01e4e05b66a7ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7da3766c7440410d91e004aa700b26a5.setIcon(icon_bde57d13b00f40c78d01e4e05b66a7ea);
+        
+    
+        var popup_6b44c471607e4306a9ede45da0c8ec3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff6e645096c14bdab08e90eacf0dd281 = $(`<div id="html_ff6e645096c14bdab08e90eacf0dd281" style="width: 100.0%; height: 100.0%;">New World Botany</div>`)[0];
+            popup_6b44c471607e4306a9ede45da0c8ec3c.setContent(html_ff6e645096c14bdab08e90eacf0dd281);
+        
+
+        marker_7da3766c7440410d91e004aa700b26a5.bindPopup(popup_6b44c471607e4306a9ede45da0c8ec3c)
+        ;
+
+        
+    
+    
+            var marker_1e6a1d66c9624b6f8399549f0ca8ec83 = L.marker(
+                [-36.7159615, 174.7472869],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_8f848a7a706747158ea9cb4be9f1f681 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1e6a1d66c9624b6f8399549f0ca8ec83.setIcon(icon_8f848a7a706747158ea9cb4be9f1f681);
+        
+    
+        var popup_cc1f1aa909fc42cea53fbaccaf6077a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a846136052f47cc8fde12880b5bc4b0 = $(`<div id="html_0a846136052f47cc8fde12880b5bc4b0" style="width: 100.0%; height: 100.0%;">New World Browns Bay</div>`)[0];
+            popup_cc1f1aa909fc42cea53fbaccaf6077a4.setContent(html_0a846136052f47cc8fde12880b5bc4b0);
+        
+
+        marker_1e6a1d66c9624b6f8399549f0ca8ec83.bindPopup(popup_cc1f1aa909fc42cea53fbaccaf6077a4)
+        ;
+
+        
+    
+    
+            var marker_951b878ace6443f990ba066088a95f5c = L.marker(
+                [-36.8295102, 174.79619340000002],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_69379b588ada4837925638bf20a7006d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_951b878ace6443f990ba066088a95f5c.setIcon(icon_69379b588ada4837925638bf20a7006d);
+        
+    
+        var popup_98bc57e3bfb64ab391ccd260a58a0723 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0bcd9903d8443219ad0449cc0f1f111 = $(`<div id="html_e0bcd9903d8443219ad0449cc0f1f111" style="width: 100.0%; height: 100.0%;">New World Devonport</div>`)[0];
+            popup_98bc57e3bfb64ab391ccd260a58a0723.setContent(html_e0bcd9903d8443219ad0449cc0f1f111);
+        
+
+        marker_951b878ace6443f990ba066088a95f5c.bindPopup(popup_98bc57e3bfb64ab391ccd260a58a0723)
+        ;
+
+        
+    
+    
+            var marker_8c13babf37f34b98b06dff7534de6cb3 = L.marker(
+                [-36.86099, 174.82923799999998],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_4256b41d64b94a4b97ccd928cb903b2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8c13babf37f34b98b06dff7534de6cb3.setIcon(icon_4256b41d64b94a4b97ccd928cb903b2d);
+        
+    
+        var popup_9926f54e86bb43f3a480b555c1a3a4b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a42cf2f8c0ab462388c07bcb8c654d99 = $(`<div id="html_a42cf2f8c0ab462388c07bcb8c654d99" style="width: 100.0%; height: 100.0%;">New World Eastridge</div>`)[0];
+            popup_9926f54e86bb43f3a480b555c1a3a4b0.setContent(html_a42cf2f8c0ab462388c07bcb8c654d99);
+        
+
+        marker_8c13babf37f34b98b06dff7534de6cb3.bindPopup(popup_9926f54e86bb43f3a480b555c1a3a4b0)
+        ;
+
+        
+    
+    
+            var marker_fe92b60a51254ea796551191dabdf899 = L.marker(
+                [-36.93082329999999, 174.6790458],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_1aba2990915e4da4baf9ba48fb9b19ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe92b60a51254ea796551191dabdf899.setIcon(icon_1aba2990915e4da4baf9ba48fb9b19ae);
+        
+    
+        var popup_ce765b2347354ad7a53d69592d3ae19d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d38f97e186a4434bf708cf6f45f79d7 = $(`<div id="html_7d38f97e186a4434bf708cf6f45f79d7" style="width: 100.0%; height: 100.0%;">New World Green Bay</div>`)[0];
+            popup_ce765b2347354ad7a53d69592d3ae19d.setContent(html_7d38f97e186a4434bf708cf6f45f79d7);
+        
+
+        marker_fe92b60a51254ea796551191dabdf899.bindPopup(popup_ce765b2347354ad7a53d69592d3ae19d)
+        ;
+
+        
+    
+    
+            var marker_ee0f1d167cc94c6f8db44e57d5b2343a = L.marker(
+                [-36.904065, 174.92486680000002],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_d8a0793d44d746bdba16af5604acf326 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee0f1d167cc94c6f8db44e57d5b2343a.setIcon(icon_d8a0793d44d746bdba16af5604acf326);
+        
+    
+        var popup_6ca97fd4232f4a6cae7ccd6f62c86040 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1d771e607134c76a88a78bfe45b1317 = $(`<div id="html_c1d771e607134c76a88a78bfe45b1317" style="width: 100.0%; height: 100.0%;">New World Howick</div>`)[0];
+            popup_6ca97fd4232f4a6cae7ccd6f62c86040.setContent(html_c1d771e607134c76a88a78bfe45b1317);
+        
+
+        marker_ee0f1d167cc94c6f8db44e57d5b2343a.bindPopup(popup_6ca97fd4232f4a6cae7ccd6f62c86040)
+        ;
+
+        
+    
+    
+            var marker_d28fdf3e6c3f48918bed77857ba36d29 = L.marker(
+                [-36.685250200000006, 174.7396625],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_1012e9fa0e3741f4baf1b8823a330a6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d28fdf3e6c3f48918bed77857ba36d29.setIcon(icon_1012e9fa0e3741f4baf1b8823a330a6c);
+        
+    
+        var popup_c5d63bae541d4d4ca611649a317d8387 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1dce59330e2544a1aa046f4093414512 = $(`<div id="html_1dce59330e2544a1aa046f4093414512" style="width: 100.0%; height: 100.0%;">New World Long Bay</div>`)[0];
+            popup_c5d63bae541d4d4ca611649a317d8387.setContent(html_1dce59330e2544a1aa046f4093414512);
+        
+
+        marker_d28fdf3e6c3f48918bed77857ba36d29.bindPopup(popup_c5d63bae541d4d4ca611649a317d8387)
+        ;
+
+        
+    
+    
+            var marker_a797121acc7d4e44b9fd80d2d3d1fe9c = L.marker(
+                [-36.846471799999996, 174.7657806],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_dea6d305e8504f4c9d376f20857578f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a797121acc7d4e44b9fd80d2d3d1fe9c.setIcon(icon_dea6d305e8504f4c9d376f20857578f9);
+        
+    
+        var popup_70b92fbf8bd44e298a8727d197ca8d15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f820be2e80ee49079ff35cd64462cd8b = $(`<div id="html_f820be2e80ee49079ff35cd64462cd8b" style="width: 100.0%; height: 100.0%;">New World Metro Queen St</div>`)[0];
+            popup_70b92fbf8bd44e298a8727d197ca8d15.setContent(html_f820be2e80ee49079ff35cd64462cd8b);
+        
+
+        marker_a797121acc7d4e44b9fd80d2d3d1fe9c.bindPopup(popup_70b92fbf8bd44e298a8727d197ca8d15)
+        ;
+
+        
+    
+    
+            var marker_28e04fa3cce547bcb5826a93167717f5 = L.marker(
+                [-36.772298299999996, 174.7648051],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_70412a8a374745f5a1e1b68ac6a11413 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28e04fa3cce547bcb5826a93167717f5.setIcon(icon_70412a8a374745f5a1e1b68ac6a11413);
+        
+    
+        var popup_7d81d9a6174a4c748c7e23e142a0b9db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae305a80c41f4f98bec4acaa2297d11f = $(`<div id="html_ae305a80c41f4f98bec4acaa2297d11f" style="width: 100.0%; height: 100.0%;">New World Milford</div>`)[0];
+            popup_7d81d9a6174a4c748c7e23e142a0b9db.setContent(html_ae305a80c41f4f98bec4acaa2297d11f);
+        
+
+        marker_28e04fa3cce547bcb5826a93167717f5.bindPopup(popup_7d81d9a6174a4c748c7e23e142a0b9db)
+        ;
+
+        
+    
+    
+            var marker_669c7ba96ddb463abba3688b8c4d6876 = L.marker(
+                [-36.9086111, 174.7344444],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_915317438a964048ac380316cdebbc55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_669c7ba96ddb463abba3688b8c4d6876.setIcon(icon_915317438a964048ac380316cdebbc55);
+        
+    
+        var popup_bc98133217394c19bf1f7a30c61c8ba9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54a3dfe017ea48ada82a338336a04990 = $(`<div id="html_54a3dfe017ea48ada82a338336a04990" style="width: 100.0%; height: 100.0%;">New World Mt Roskill</div>`)[0];
+            popup_bc98133217394c19bf1f7a30c61c8ba9.setContent(html_54a3dfe017ea48ada82a338336a04990);
+        
+
+        marker_669c7ba96ddb463abba3688b8c4d6876.bindPopup(popup_bc98133217394c19bf1f7a30c61c8ba9)
+        ;
+
+        
+    
+    
+            var marker_cbf6166c1ae24791a359d9ccd3d5a0c6 = L.marker(
+                [-36.9108233, 174.6855069],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_02b4806152314624bdc677a416cb79be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cbf6166c1ae24791a359d9ccd3d5a0c6.setIcon(icon_02b4806152314624bdc677a416cb79be);
+        
+    
+        var popup_cbb7f6ecfd8744ca8befcab67e911f7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e021384d9030497d860d64d0850ce7f1 = $(`<div id="html_e021384d9030497d860d64d0850ce7f1" style="width: 100.0%; height: 100.0%;">New World New Lynn</div>`)[0];
+            popup_cbb7f6ecfd8744ca8befcab67e911f7b.setContent(html_e021384d9030497d860d64d0850ce7f1);
+        
+
+        marker_cbf6166c1ae24791a359d9ccd3d5a0c6.bindPopup(popup_cbb7f6ecfd8744ca8befcab67e911f7b)
+        ;
+
+        
+    
+    
+            var marker_29fd355b27b64fbf8365d9a656bd0635 = L.marker(
+                [-37.064268, 174.9411007],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_9f9fa697043b4872971644cbceedfc09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_29fd355b27b64fbf8365d9a656bd0635.setIcon(icon_9f9fa697043b4872971644cbceedfc09);
+        
+    
+        var popup_6f3f2530c2c2453986a3230ece5b7ca5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bbd346354fa43539591d8bcb60f4349 = $(`<div id="html_6bbd346354fa43539591d8bcb60f4349" style="width: 100.0%; height: 100.0%;">New World Papakura</div>`)[0];
+            popup_6f3f2530c2c2453986a3230ece5b7ca5.setContent(html_6bbd346354fa43539591d8bcb60f4349);
+        
+
+        marker_29fd355b27b64fbf8365d9a656bd0635.bindPopup(popup_6f3f2530c2c2453986a3230ece5b7ca5)
+        ;
+
+        
+    
+    
+            var marker_9afcaa01cf574df9b0b2142507c33da9 = L.marker(
+                [-36.9802417, 174.8539063],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_8e92a78b6a88480092998d708d6dd352 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9afcaa01cf574df9b0b2142507c33da9.setIcon(icon_8e92a78b6a88480092998d708d6dd352);
+        
+    
+        var popup_701b8bea2d0242b2ac4466b7d31c7188 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84b5c76b7a114ab890b5ce5b39c1b1e4 = $(`<div id="html_84b5c76b7a114ab890b5ce5b39c1b1e4" style="width: 100.0%; height: 100.0%;">New World Papatoetoe</div>`)[0];
+            popup_701b8bea2d0242b2ac4466b7d31c7188.setContent(html_84b5c76b7a114ab890b5ce5b39c1b1e4);
+        
+
+        marker_9afcaa01cf574df9b0b2142507c33da9.bindPopup(popup_701b8bea2d0242b2ac4466b7d31c7188)
+        ;
+
+        
+    
+    
+            var marker_e4d937e76b8b49869c3eaefc4c75e0d1 = L.marker(
+                [-36.8819007, 174.7976545],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_29722eb62a494066872e4dbc2f54dbe9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e4d937e76b8b49869c3eaefc4c75e0d1.setIcon(icon_29722eb62a494066872e4dbc2f54dbe9);
+        
+    
+        var popup_6d4d4cd831c54fafbad9ffbc635ce76a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a27f665cd3e4297b2d301416b6fe93d = $(`<div id="html_2a27f665cd3e4297b2d301416b6fe93d" style="width: 100.0%; height: 100.0%;">New World Remuera</div>`)[0];
+            popup_6d4d4cd831c54fafbad9ffbc635ce76a.setContent(html_2a27f665cd3e4297b2d301416b6fe93d);
+        
+
+        marker_e4d937e76b8b49869c3eaefc4c75e0d1.bindPopup(popup_6d4d4cd831c54fafbad9ffbc635ce76a)
+        ;
+
+        
+    
+    
+            var marker_acf3985671d94aa5910586c024a77dd5 = L.marker(
+                [-37.0225053, 174.8967004],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_d49aa90ae8f646c38bc3b44981197862 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_acf3985671d94aa5910586c024a77dd5.setIcon(icon_d49aa90ae8f646c38bc3b44981197862);
+        
+    
+        var popup_154ed682dacc4567add560d45d988f9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51ceb0d230c14e879af7172283058cb3 = $(`<div id="html_51ceb0d230c14e879af7172283058cb3" style="width: 100.0%; height: 100.0%;">New World Southmall</div>`)[0];
+            popup_154ed682dacc4567add560d45d988f9d.setContent(html_51ceb0d230c14e879af7172283058cb3);
+        
+
+        marker_acf3985671d94aa5910586c024a77dd5.bindPopup(popup_154ed682dacc4567add560d45d988f9d)
+        ;
+
+        
+    
+    
+            var marker_e94e68fd48de4ec8b6bf08e96498a986 = L.marker(
+                [-36.8902739, 174.831971],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_261b5695f6404a46bfd0116addde51f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e94e68fd48de4ec8b6bf08e96498a986.setIcon(icon_261b5695f6404a46bfd0116addde51f7);
+        
+    
+        var popup_3c76af88c39442479260368f60641e4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f83cce0c75c246d6b51bf5777e68948e = $(`<div id="html_f83cce0c75c246d6b51bf5777e68948e" style="width: 100.0%; height: 100.0%;">New World Stonefields</div>`)[0];
+            popup_3c76af88c39442479260368f60641e4d.setContent(html_f83cce0c75c246d6b51bf5777e68948e);
+        
+
+        marker_e94e68fd48de4ec8b6bf08e96498a986.bindPopup(popup_3c76af88c39442479260368f60641e4d)
+        ;
+
+        
+    
+    
+            var marker_465748f0e37545fc9c8cc3daa85e5e8f = L.marker(
+                [-36.8486497, 174.7512927],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_512d67b5d7b1426ab08be9bcf560b712 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_465748f0e37545fc9c8cc3daa85e5e8f.setIcon(icon_512d67b5d7b1426ab08be9bcf560b712);
+        
+    
+        var popup_98f04f4ade044f3886b87f63056ad175 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bc47a05a3834eddb560d3866ada90d0 = $(`<div id="html_4bc47a05a3834eddb560d3866ada90d0" style="width: 100.0%; height: 100.0%;">New World Victoria Park</div>`)[0];
+            popup_98f04f4ade044f3886b87f63056ad175.setContent(html_4bc47a05a3834eddb560d3866ada90d0);
+        
+
+        marker_465748f0e37545fc9c8cc3daa85e5e8f.bindPopup(popup_98f04f4ade044f3886b87f63056ad175)
+        ;
+
+        
+    
+    
+            var marker_72ee9950eb424e29bf17d7a434c05a2f = L.marker(
+                [-36.730108, 174.70714980000002],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_b69c460ebeec497b8b996dc974beabc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_72ee9950eb424e29bf17d7a434c05a2f.setIcon(icon_b69c460ebeec497b8b996dc974beabc1);
+        
+    
+        var popup_f1cf25ac3bf749f9ab6ee6c538acc096 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5e928aad21941c896f6ba5aba62754e = $(`<div id="html_f5e928aad21941c896f6ba5aba62754e" style="width: 100.0%; height: 100.0%;">Pak 'n Save Albany</div>`)[0];
+            popup_f1cf25ac3bf749f9ab6ee6c538acc096.setContent(html_f5e928aad21941c896f6ba5aba62754e);
+        
+
+        marker_72ee9950eb424e29bf17d7a434c05a2f.bindPopup(popup_f1cf25ac3bf749f9ab6ee6c538acc096)
+        ;
+
+        
+    
+    
+            var marker_ede6a81a15954f1d82510313848f461b = L.marker(
+                [-36.930553499999995, 174.91288909999997],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_db317e6dfa804dd2aede6375e4602551 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_ede6a81a15954f1d82510313848f461b.setIcon(icon_db317e6dfa804dd2aede6375e4602551);
+        
+    
+        var popup_ba0f4206fb4149299eb53f4f44288265 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_745271c1abd1456a8dc81c7c6b618a02 = $(`<div id="html_745271c1abd1456a8dc81c7c6b618a02" style="width: 100.0%; height: 100.0%;">Pak 'n Save Botany</div>`)[0];
+            popup_ba0f4206fb4149299eb53f4f44288265.setContent(html_745271c1abd1456a8dc81c7c6b618a02);
+        
+
+        marker_ede6a81a15954f1d82510313848f461b.bindPopup(popup_ba0f4206fb4149299eb53f4f44288265)
+        ;
+
+        
+    
+    
+            var marker_a5f639d2aa9f4858a9ec2cea2709f29a = L.marker(
+                [-37.0328005, 174.86762199999998],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_10be57a889c74f248372ba312dbddf95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_a5f639d2aa9f4858a9ec2cea2709f29a.setIcon(icon_10be57a889c74f248372ba312dbddf95);
+        
+    
+        var popup_9fa2b3c98c3048a2a6e870464ed1a406 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd871c945e6843688fb847096138b5a0 = $(`<div id="html_fd871c945e6843688fb847096138b5a0" style="width: 100.0%; height: 100.0%;">Pak 'n Save Clendon</div>`)[0];
+            popup_9fa2b3c98c3048a2a6e870464ed1a406.setContent(html_fd871c945e6843688fb847096138b5a0);
+        
+
+        marker_a5f639d2aa9f4858a9ec2cea2709f29a.bindPopup(popup_9fa2b3c98c3048a2a6e870464ed1a406)
+        ;
+
+        
+    
+    
+            var marker_049926e201b840c4b62ef0b126bb5bce = L.marker(
+                [-36.875811, 174.855104],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_2ef6ae1437ac439ba67a7908031277da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_049926e201b840c4b62ef0b126bb5bce.setIcon(icon_2ef6ae1437ac439ba67a7908031277da);
+        
+    
+        var popup_e07d3137b3f84a64b6454a2827db10c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_856b5fc39c61412e8d18e1609ddadd81 = $(`<div id="html_856b5fc39c61412e8d18e1609ddadd81" style="width: 100.0%; height: 100.0%;">Pak 'n Save Glen Innes</div>`)[0];
+            popup_e07d3137b3f84a64b6454a2827db10c5.setContent(html_856b5fc39c61412e8d18e1609ddadd81);
+        
+
+        marker_049926e201b840c4b62ef0b126bb5bce.bindPopup(popup_e07d3137b3f84a64b6454a2827db10c5)
+        ;
+
+        
+    
+    
+            var marker_cff0fd2340824a05908aedf8d14fccfa = L.marker(
+                [-36.877295600000004, 174.6325345],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_938c2c3d8187410aae476edc3eca734a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_cff0fd2340824a05908aedf8d14fccfa.setIcon(icon_938c2c3d8187410aae476edc3eca734a);
+        
+    
+        var popup_ff80150e71d24dc9a6e18e505002291b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25595c2cce6349d687ffc233679410f7 = $(`<div id="html_25595c2cce6349d687ffc233679410f7" style="width: 100.0%; height: 100.0%;">Pak 'n Save Henderson</div>`)[0];
+            popup_ff80150e71d24dc9a6e18e505002291b.setContent(html_25595c2cce6349d687ffc233679410f7);
+        
+
+        marker_cff0fd2340824a05908aedf8d14fccfa.bindPopup(popup_ff80150e71d24dc9a6e18e505002291b)
+        ;
+
+        
+    
+    
+            var marker_20a14c77a0f44101bd9642abdab342b8 = L.marker(
+                [-36.857457399999994, 174.6281678],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_a8e363ec5f0040ad8878b7829edff6a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_20a14c77a0f44101bd9642abdab342b8.setIcon(icon_a8e363ec5f0040ad8878b7829edff6a4);
+        
+    
+        var popup_840d20d9ae8049cc8ea88015a3ae84bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b616a8140364ad8953daf86d1cf889e = $(`<div id="html_9b616a8140364ad8953daf86d1cf889e" style="width: 100.0%; height: 100.0%;">Pak 'n Save Lincoln Road</div>`)[0];
+            popup_840d20d9ae8049cc8ea88015a3ae84bb.setContent(html_9b616a8140364ad8953daf86d1cf889e);
+        
+
+        marker_20a14c77a0f44101bd9642abdab342b8.bindPopup(popup_840d20d9ae8049cc8ea88015a3ae84bb)
+        ;
+
+        
+    
+    
+            var marker_ed24a58593534941b7d6996fed4727e2 = L.marker(
+                [-36.968447600000005, 174.7970282],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_91f030aaba2247728d9ee63569895ae6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_ed24a58593534941b7d6996fed4727e2.setIcon(icon_91f030aaba2247728d9ee63569895ae6);
+        
+    
+        var popup_2b77d31913dd4f499c4360bbe8552178 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c5b5faafb30482e81ab27d89ea3ab39 = $(`<div id="html_0c5b5faafb30482e81ab27d89ea3ab39" style="width: 100.0%; height: 100.0%;">Pak 'n Save Mangere</div>`)[0];
+            popup_2b77d31913dd4f499c4360bbe8552178.setContent(html_0c5b5faafb30482e81ab27d89ea3ab39);
+        
+
+        marker_ed24a58593534941b7d6996fed4727e2.bindPopup(popup_2b77d31913dd4f499c4360bbe8552178)
+        ;
+
+        
+    
+    
+            var marker_f78cff2a0f494d8fba88a5e6296e7f4d = L.marker(
+                [-36.987844200000005, 174.88073400000002],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_07184539e825468fa418b06dce0e5405 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_f78cff2a0f494d8fba88a5e6296e7f4d.setIcon(icon_07184539e825468fa418b06dce0e5405);
+        
+    
+        var popup_f1bb8891b40240c19b29b899f1304fb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3f137bc59f848579e938e3c37fb7909 = $(`<div id="html_a3f137bc59f848579e938e3c37fb7909" style="width: 100.0%; height: 100.0%;">Pak 'n Save Manukau</div>`)[0];
+            popup_f1bb8891b40240c19b29b899f1304fb7.setContent(html_a3f137bc59f848579e938e3c37fb7909);
+        
+
+        marker_f78cff2a0f494d8fba88a5e6296e7f4d.bindPopup(popup_f1bb8891b40240c19b29b899f1304fb7)
+        ;
+
+        
+    
+    
+            var marker_b37efc6cbf1c47d2b6ef6e787f65d566 = L.marker(
+                [-36.8926862, 174.7061264],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_538e14a4eb8f43698dc16bd86ff191ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_b37efc6cbf1c47d2b6ef6e787f65d566.setIcon(icon_538e14a4eb8f43698dc16bd86ff191ca);
+        
+    
+        var popup_89b913542f2b469f808ef6082ef38dd4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4968b3fc6934945af483257363a332a = $(`<div id="html_d4968b3fc6934945af483257363a332a" style="width: 100.0%; height: 100.0%;">Pak 'n Save Mt Albert</div>`)[0];
+            popup_89b913542f2b469f808ef6082ef38dd4.setContent(html_d4968b3fc6934945af483257363a332a);
+        
+
+        marker_b37efc6cbf1c47d2b6ef6e787f65d566.bindPopup(popup_89b913542f2b469f808ef6082ef38dd4)
+        ;
+
+        
+    
+    
+            var marker_aa95f9c22b2c4c039f2655d89f5af6db = L.marker(
+                [-36.96508660000001, 174.91480969999998],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_f6768c2b7bd74b4db033156d5552d676 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_aa95f9c22b2c4c039f2655d89f5af6db.setIcon(icon_f6768c2b7bd74b4db033156d5552d676);
+        
+    
+        var popup_c19bf47f962846d5b4b5471d3a042266 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22829a91511440d98441971f688c51da = $(`<div id="html_22829a91511440d98441971f688c51da" style="width: 100.0%; height: 100.0%;">Pak 'n Save Ormiston</div>`)[0];
+            popup_c19bf47f962846d5b4b5471d3a042266.setContent(html_22829a91511440d98441971f688c51da);
+        
+
+        marker_aa95f9c22b2c4c039f2655d89f5af6db.bindPopup(popup_c19bf47f962846d5b4b5471d3a042266)
+        ;
+
+        
+    
+    
+            var marker_9f54a4248f734061b2d4ff5c89a9fae8 = L.marker(
+                [-37.053518200000006, 174.9311235],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_cbf36ccfc1ed4b4aacad3a4641e285e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_9f54a4248f734061b2d4ff5c89a9fae8.setIcon(icon_cbf36ccfc1ed4b4aacad3a4641e285e5);
+        
+    
+        var popup_ca55fd55f01d45118002e7f9711f7356 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23487b2e9add4de488e543d8f684fff0 = $(`<div id="html_23487b2e9add4de488e543d8f684fff0" style="width: 100.0%; height: 100.0%;">Pak 'n Save Papakura</div>`)[0];
+            popup_ca55fd55f01d45118002e7f9711f7356.setContent(html_23487b2e9add4de488e543d8f684fff0);
+        
+
+        marker_9f54a4248f734061b2d4ff5c89a9fae8.bindPopup(popup_ca55fd55f01d45118002e7f9711f7356)
+        ;
+
+        
+    
+    
+            var marker_7ad4d37003db47979c56359afe56d26e = L.marker(
+                [-36.9100403, 174.7746132],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_b5c9f867a4174e46b0ac166a7701b690 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_7ad4d37003db47979c56359afe56d26e.setIcon(icon_b5c9f867a4174e46b0ac166a7701b690);
+        
+    
+        var popup_531ec8551ad94b278d06f0e9ecb6298c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6103e2c7e58d4391b76c5ac31a4147f9 = $(`<div id="html_6103e2c7e58d4391b76c5ac31a4147f9" style="width: 100.0%; height: 100.0%;">Pak 'n Save Royal Oak</div>`)[0];
+            popup_531ec8551ad94b278d06f0e9ecb6298c.setContent(html_6103e2c7e58d4391b76c5ac31a4147f9);
+        
+
+        marker_7ad4d37003db47979c56359afe56d26e.bindPopup(popup_531ec8551ad94b278d06f0e9ecb6298c)
+        ;
+
+        
+    
+    
+            var marker_a0b6d5fa36f047aca64027d621d662b4 = L.marker(
+                [-36.9133467, 174.8400897],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_61906d8147314f2f8fcb4ee470a1a606 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_a0b6d5fa36f047aca64027d621d662b4.setIcon(icon_61906d8147314f2f8fcb4ee470a1a606);
+        
+    
+        var popup_c789ecbd2efe47d7af71ce826ed20558 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17c85dff63fb4c8f838119e4ea2330b4 = $(`<div id="html_17c85dff63fb4c8f838119e4ea2330b4" style="width: 100.0%; height: 100.0%;">Pak 'n Save Sylvia Park</div>`)[0];
+            popup_c789ecbd2efe47d7af71ce826ed20558.setContent(html_17c85dff63fb4c8f838119e4ea2330b4);
+        
+
+        marker_a0b6d5fa36f047aca64027d621d662b4.bindPopup(popup_c789ecbd2efe47d7af71ce826ed20558)
+        ;
+
+        
+    
+    
+            var marker_7f9a115685534cfa98beccc2a1c29c9f = L.marker(
+                [-36.778998, 174.744093],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_6ad2b08a4f1641379ad216ce9aa62d75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_7f9a115685534cfa98beccc2a1c29c9f.setIcon(icon_6ad2b08a4f1641379ad216ce9aa62d75);
+        
+    
+        var popup_fd5f9c3b6454423e9f8ddfd4ce7dffd5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c3de4d391e74686a1b6b3e6b0d02e49 = $(`<div id="html_0c3de4d391e74686a1b6b3e6b0d02e49" style="width: 100.0%; height: 100.0%;">Pak 'n Save Wairau Road</div>`)[0];
+            popup_fd5f9c3b6454423e9f8ddfd4ce7dffd5.setContent(html_0c3de4d391e74686a1b6b3e6b0d02e49);
+        
+
+        marker_7f9a115685534cfa98beccc2a1c29c9f.bindPopup(popup_fd5f9c3b6454423e9f8ddfd4ce7dffd5)
+        ;
+
+        
+    
+    
+            var marker_83a7371bd4b1479d9ca959b79a838fb5 = L.marker(
+                [-36.820483200000005, 174.60853730000002],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_5ad3fc212fac435898b79a6c7b4f3f26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_83a7371bd4b1479d9ca959b79a838fb5.setIcon(icon_5ad3fc212fac435898b79a6c7b4f3f26);
+        
+    
+        var popup_610cb5ef8dec470793c23113633ce27a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5417d79fbb55453e8ffacc35f3292da7 = $(`<div id="html_5417d79fbb55453e8ffacc35f3292da7" style="width: 100.0%; height: 100.0%;">Pak 'n Save Westgate</div>`)[0];
+            popup_610cb5ef8dec470793c23113633ce27a.setContent(html_5417d79fbb55453e8ffacc35f3292da7);
+        
+
+        marker_83a7371bd4b1479d9ca959b79a838fb5.bindPopup(popup_610cb5ef8dec470793c23113633ce27a)
+        ;
+
+        
+    
+    
+            var marker_0e773e9a0bd7486d9b293907cd5a665f = L.marker(
+                [-36.6949969, 174.75063500000002],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_33ba83427bad442a8e4cdc82e5acc856 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0e773e9a0bd7486d9b293907cd5a665f.setIcon(icon_33ba83427bad442a8e4cdc82e5acc856);
+        
+    
+        var popup_8f138e6c046846d091ee3fc708a8ee2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94adc8cd216b4750aec0bbfc2614f70c = $(`<div id="html_94adc8cd216b4750aec0bbfc2614f70c" style="width: 100.0%; height: 100.0%;">Four Square BKs Torbay</div>`)[0];
+            popup_8f138e6c046846d091ee3fc708a8ee2d.setContent(html_94adc8cd216b4750aec0bbfc2614f70c);
+        
+
+        marker_0e773e9a0bd7486d9b293907cd5a665f.bindPopup(popup_8f138e6c046846d091ee3fc708a8ee2d)
+        ;
+
+        
+    
+    
+            var marker_13f6c3ac4ee54acab88135c0d8b61dfc = L.marker(
+                [-36.9651717, 174.90233],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_08657ad17139434e8b148ecbd1a60f77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_13f6c3ac4ee54acab88135c0d8b61dfc.setIcon(icon_08657ad17139434e8b148ecbd1a60f77);
+        
+    
+        var popup_9a42e22b15274173b14f88b68cae95e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2e2f3d99bdc4456824bf95543b45a06 = $(`<div id="html_a2e2f3d99bdc4456824bf95543b45a06" style="width: 100.0%; height: 100.0%;">Four Square Botany Junction</div>`)[0];
+            popup_9a42e22b15274173b14f88b68cae95e5.setContent(html_a2e2f3d99bdc4456824bf95543b45a06);
+        
+
+        marker_13f6c3ac4ee54acab88135c0d8b61dfc.bindPopup(popup_9a42e22b15274173b14f88b68cae95e5)
+        ;
+
+        
+    
+    
+            var marker_65719100dae3410f95a5e50d529e2e38 = L.marker(
+                [-36.90420579999999, 174.9392803],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_b8e303961a9145568cff733d273d4bf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_65719100dae3410f95a5e50d529e2e38.setIcon(icon_b8e303961a9145568cff733d273d4bf7);
+        
+    
+        var popup_35dc9818947b43e1b895854071ef8ba2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d28f10a880384aaf84141ad20d24a505 = $(`<div id="html_d28f10a880384aaf84141ad20d24a505" style="width: 100.0%; height: 100.0%;">Four Square Cockle Bay</div>`)[0];
+            popup_35dc9818947b43e1b895854071ef8ba2.setContent(html_d28f10a880384aaf84141ad20d24a505);
+        
+
+        marker_65719100dae3410f95a5e50d529e2e38.bindPopup(popup_35dc9818947b43e1b895854071ef8ba2)
+        ;
+
+        
+    
+    
+            var marker_90c0da834b8b46adb6fe2cca86313508 = L.marker(
+                [-36.8979098, 174.80968049999998],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_f7b3ee4c154046499b0261d991be04ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_90c0da834b8b46adb6fe2cca86313508.setIcon(icon_f7b3ee4c154046499b0261d991be04ee);
+        
+    
+        var popup_329bb156634642d886487b651670fe22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7091f47029b6428eb80e421152f057d4 = $(`<div id="html_7091f47029b6428eb80e421152f057d4" style="width: 100.0%; height: 100.0%;">Four Square Ellerslie</div>`)[0];
+            popup_329bb156634642d886487b651670fe22.setContent(html_7091f47029b6428eb80e421152f057d4);
+        
+
+        marker_90c0da834b8b46adb6fe2cca86313508.bindPopup(popup_329bb156634642d886487b651670fe22)
+        ;
+
+        
+    
+    
+            var marker_057941ca84834f70a1ab634be12c6a0e = L.marker(
+                [-36.9982679, 174.8948009],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_921478cd621d4188b98f46d1586002ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_057941ca84834f70a1ab634be12c6a0e.setIcon(icon_921478cd621d4188b98f46d1586002ad);
+        
+    
+        var popup_6d56751be0304d419759bdbc38a09c1a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84d3328f9ae442139d66234f017b18ad = $(`<div id="html_84d3328f9ae442139d66234f017b18ad" style="width: 100.0%; height: 100.0%;">Four Square Everglade</div>`)[0];
+            popup_6d56751be0304d419759bdbc38a09c1a.setContent(html_84d3328f9ae442139d66234f017b18ad);
+        
+
+        marker_057941ca84834f70a1ab634be12c6a0e.bindPopup(popup_6d56751be0304d419759bdbc38a09c1a)
+        ;
+
+        
+    
+    
+            var marker_4c56dd46fa7b46dabc41d5da34e422bf = L.marker(
+                [-36.863634000000005, 174.614478],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_02102ba6185d4a98bb2cc09c68a7f42b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4c56dd46fa7b46dabc41d5da34e422bf.setIcon(icon_02102ba6185d4a98bb2cc09c68a7f42b);
+        
+    
+        var popup_00ec5970d19f4e7abc32096111a3bee6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de244f86ddd341b69317a16d1053f58b = $(`<div id="html_de244f86ddd341b69317a16d1053f58b" style="width: 100.0%; height: 100.0%;">Four Square Fair Price Henderson</div>`)[0];
+            popup_00ec5970d19f4e7abc32096111a3bee6.setContent(html_de244f86ddd341b69317a16d1053f58b);
+        
+
+        marker_4c56dd46fa7b46dabc41d5da34e422bf.bindPopup(popup_00ec5970d19f4e7abc32096111a3bee6)
+        ;
+
+        
+    
+    
+            var marker_0af0d2a211f54f8cb40db75343be4fed = L.marker(
+                [-36.910914, 174.651446],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_e7980f8f304747108a6112283ae1cd4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0af0d2a211f54f8cb40db75343be4fed.setIcon(icon_e7980f8f304747108a6112283ae1cd4b);
+        
+    
+        var popup_0dd827b84d0e48dfa937b19b9cfffd49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e8df1b88f1b4f28bcb64fdc7170a285 = $(`<div id="html_9e8df1b88f1b4f28bcb64fdc7170a285" style="width: 100.0%; height: 100.0%;">Four Square Glen Eden</div>`)[0];
+            popup_0dd827b84d0e48dfa937b19b9cfffd49.setContent(html_9e8df1b88f1b4f28bcb64fdc7170a285);
+        
+
+        marker_0af0d2a211f54f8cb40db75343be4fed.bindPopup(popup_0dd827b84d0e48dfa937b19b9cfffd49)
+        ;
+
+        
+    
+    
+            var marker_82e505b94b6243f1ac5471c105ed289d = L.marker(
+                [-36.8783625, 174.8556896],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_a4930619e75c44f2ada51b5c02718259 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_82e505b94b6243f1ac5471c105ed289d.setIcon(icon_a4930619e75c44f2ada51b5c02718259);
+        
+    
+        var popup_72fd6116ffc24366983c7d49aee5de3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38be48e49118468b866c76cbef6ed301 = $(`<div id="html_38be48e49118468b866c76cbef6ed301" style="width: 100.0%; height: 100.0%;">Four Square Great Eastern</div>`)[0];
+            popup_72fd6116ffc24366983c7d49aee5de3b.setContent(html_38be48e49118468b866c76cbef6ed301);
+        
+
+        marker_82e505b94b6243f1ac5471c105ed289d.bindPopup(popup_72fd6116ffc24366983c7d49aee5de3b)
+        ;
+
+        
+    
+    
+            var marker_1a7b718174e74b559b12cbd751ad14d7 = L.marker(
+                [-36.7982349, 174.6492036],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_03cb8f8e410740f59a05897862710e41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1a7b718174e74b559b12cbd751ad14d7.setIcon(icon_03cb8f8e410740f59a05897862710e41);
+        
+    
+        var popup_395a9ba8feb347538eb69a12f89a9670 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c2e36fa55b44e55a1d9241296f6f90d = $(`<div id="html_4c2e36fa55b44e55a1d9241296f6f90d" style="width: 100.0%; height: 100.0%;">Four Square Hobsonville</div>`)[0];
+            popup_395a9ba8feb347538eb69a12f89a9670.setContent(html_4c2e36fa55b44e55a1d9241296f6f90d);
+        
+
+        marker_1a7b718174e74b559b12cbd751ad14d7.bindPopup(popup_395a9ba8feb347538eb69a12f89a9670)
+        ;
+
+        
+    
+    
+            var marker_7b6d02cacb8548c7b3ce0efedd5784c9 = L.marker(
+                [-36.789503, 174.694978],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_ae56cc2e6bf14b00b0a05dda087c66fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7b6d02cacb8548c7b3ce0efedd5784c9.setIcon(icon_ae56cc2e6bf14b00b0a05dda087c66fc);
+        
+    
+        var popup_070194da4eb04b48805ad86ac20d245d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b6fe319184c457aa8b198c9d09d3501 = $(`<div id="html_5b6fe319184c457aa8b198c9d09d3501" style="width: 100.0%; height: 100.0%;">Four Square Lancaster</div>`)[0];
+            popup_070194da4eb04b48805ad86ac20d245d.setContent(html_5b6fe319184c457aa8b198c9d09d3501);
+        
+
+        marker_7b6d02cacb8548c7b3ce0efedd5784c9.bindPopup(popup_070194da4eb04b48805ad86ac20d245d)
+        ;
+
+        
+    
+    
+            var marker_6520b588782545d4a07809c53568840a = L.marker(
+                [-36.9151401, 174.8895497],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_9ac3056f3946459ea54018e3b95c1f2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6520b588782545d4a07809c53568840a.setIcon(icon_9ac3056f3946459ea54018e3b95c1f2e);
+        
+    
+        var popup_8fb58366c2bd40f698311eeebfa56f79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1fefa84d12041208faadc35cf264509 = $(`<div id="html_c1fefa84d12041208faadc35cf264509" style="width: 100.0%; height: 100.0%;">Four Square Pakuranga Heights</div>`)[0];
+            popup_8fb58366c2bd40f698311eeebfa56f79.setContent(html_c1fefa84d12041208faadc35cf264509);
+        
+
+        marker_6520b588782545d4a07809c53568840a.bindPopup(popup_8fb58366c2bd40f698311eeebfa56f79)
+        ;
+
+        
+    
+    
+            var marker_aa7e2f72f29e4346957466e67891e0f7 = L.marker(
+                [-36.880326399999994, 174.7259778],
+                {}
+            ).addTo(map_baa674b1c1db43aa827e5a9ca2cfe4b5);
+        
+    
+            var icon_261b52cfb42f490c8959cad8482965a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_aa7e2f72f29e4346957466e67891e0f7.setIcon(icon_261b52cfb42f490c8959cad8482965a1);
+        
+    
+        var popup_8a222b74d60e474a8e9140d9f4ae62e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6beadc8a860348749771a9f39f08cb84 = $(`<div id="html_6beadc8a860348749771a9f39f08cb84" style="width: 100.0%; height: 100.0%;">Fresh Collective Alberton</div>`)[0];
+            popup_8a222b74d60e474a8e9140d9f4ae62e4.setContent(html_6beadc8a860348749771a9f39f08cb84);
+        
+
+        marker_aa7e2f72f29e4346957466e67891e0f7.bindPopup(popup_8a222b74d60e474a8e9140d9f4ae62e4)
+        ;
+
+        
+    
+</script>
