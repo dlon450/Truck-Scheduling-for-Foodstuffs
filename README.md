@@ -20,6 +20,9 @@ Open the 'Final Report.pdf' file for the full report. To run the entire formulat
 * R
 * Excel
 
+## Authors
+Alex Miao, Derek Long, Karl Zhu, Nicholas Whitlock
+
 ## Acknowledgments
 
 Thanks to Kevin Jia for providing the given data.
